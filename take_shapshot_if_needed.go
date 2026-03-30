@@ -83,7 +83,7 @@ func takeSnapshot(sourceFolder string, baseSnapshotFolder string, now time.Time)
 	folder := now.Format(_FolderNameTimeFormat)
 	folder = path.Join(baseSnapshotFolder, folder)
 
-	err := os.Mkdir(folder, 0755)
+	err := os.MkdirAll(folder, 0755)
 	if err != nil {
 		return err
 	}

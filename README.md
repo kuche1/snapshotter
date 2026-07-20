@@ -1,7 +1,7 @@
 # snapshotter
 
 ```
-go run .
+go run . -help
 ```
 
 Will show you the required command line arguments
